@@ -26,3 +26,4 @@ configuration relevant for your application.
 # cakephp
 # cakephp
 # cakephp
+# myApp
