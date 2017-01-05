@@ -26,7 +26,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css('bootstrap.min') ?>
+    <?= $this->Html->css(['bootstrap.min','style']) ?>
     <?= $this->Html->script(['jquery-3.1.1.min','bootstrap.min']) ?>
 
     <?= $this->fetch('meta') ?>
@@ -34,7 +34,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->fetch('script') ?>
 </head>
 <body>
-
+    <?= $this->element('menu'); ?>
     <?= $this->Flash->render() ?>
     <div class="container clearfix">
         <?= $this->fetch('content') ?>

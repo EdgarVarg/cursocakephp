@@ -8,6 +8,15 @@
 </nav>-->
 <div class="row">
 <div class="col-md-12">
+<!--
+<nav class="navbar" id="actions-sidebar">
+    <ul class="nav navbar-nav">
+        <li class="heading"><?= __('Actions') ?></li>
+        <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Bookmarks'), ['controller' => 'Bookmarks', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Bookmark'), ['controller' => 'Bookmarks', 'action' => 'add']) ?></li>
+    </ul>
+</nav>-->
 	<div class="page-header">
     <h3><?= __('Usuarios') ?></h3></div>
     <div class="table-responsive">
@@ -35,9 +44,9 @@
              
                
                 <td class="actions">
-                    <?= $this->Html->link(__('Ver'), ['action' => 'view', $user->id]) ?>
-                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $user->id]) ?>
-                    <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $user->id], ['confirm' => __('Estas seguro de eliminar este usuario? # {0}?', $user->id)]) ?>
+                    <?= $this->Html->link(__('Ver'), ['action' => 'view', $user->id],['class' => 'btn btn-sm btn-info']) ?>
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $user->id],['class' => 'btn btn-sm btn-warning']) ?>
+                    <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $user->id],['class' => 'btn btn-sm btn-danger'], ['confirm' => __('Estas seguro de eliminar este usuario? # {0}?', $user->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>

@@ -8,6 +8,7 @@
 </nav>-->
 <div class="row">
 <div class="col-md-6 col-md-offset-3">
+<!--
 <nav class="navbar" id="actions-sidebar">
     <ul class="nav navbar-nav">
         <li class="heading"><?= __('Actions') ?></li>
@@ -15,7 +16,7 @@
         <li><?= $this->Html->link(__('List Bookmarks'), ['controller' => 'Bookmarks', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Bookmark'), ['controller' => 'Bookmarks', 'action' => 'add']) ?></li>
     </ul>
-</nav>
+</nav>-->
     <div class="page-header">
         <h2>Crear Usuario</h2>
     </div>
